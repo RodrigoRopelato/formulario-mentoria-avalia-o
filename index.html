@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <P>Chegou a hora de avaliar o seu mentor. Bora lá?</P>
+            <img src="./assets/img1.svg" alt="imagem avaliação">
+        </header>
+
+        <div class="top">
+            <h2>INFORMAÇÕES PESSOAIS</h2>
+        </div>
+
+        <form id="my-form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="ment-name">Nome</label>
+                            <input type="text" id="ment-name" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="ment-surname">Sobrenome</label>
+                            <input type="text" id="ment-surname" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="ment-email">Email<span>(digite um email válido)</span></label>
+                        <input type="email" id="ment-email" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+
+                    <div class="input-wrapper">
+                        <label for="mentor">Selecione quem foi seu mentor</label>
+                        <select id="mentor">
+                            <option value="1">Mayk</option>
+                            <option value="2">Diego</option>
+                            <option value="3">Rodrigo</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentor-feedback">Feedback sobre o mentor</label>
+                        <textarea id="mentor-feedback"></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="agree" />
+                        <label for="agree">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+
+                    <div class="sub">
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="event-date-1">Data <SPAN>(DD/MM/AAAA)</SPAN></label>
+                                <input type="date" id="event-date-1" required />
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-begin-1">Das</label>
+                                <input type="time" id="event-begin-1" required />
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-end-1">Até</label>
+                                <input type="time" id="event-end-1" required />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+            
+            <input class="button" form="my-form" type="submit" value="SALVAR">
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
